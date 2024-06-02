@@ -14,7 +14,7 @@ return new class extends Migration
             $table->text('ringkasan');
             $table->integer('tahun');
             $table->string('poster', 45);
-            $table->foreignId('genre_id')->constrained('genre_table')->onDelete('cascade');
+            $table->foreignId('genre_id')->constrained('genre')->onDelete('cascade');
             $table->timestamps();
         });
     }

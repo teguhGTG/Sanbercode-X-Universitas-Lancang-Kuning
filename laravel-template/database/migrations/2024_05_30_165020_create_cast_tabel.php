@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama', 45);
             $table->integer('umur');
-            $table->text('bio')->nullable();
+            $table->text('bio');
             $table->timestamps();
         });
     }
